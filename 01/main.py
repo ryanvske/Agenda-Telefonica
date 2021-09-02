@@ -2,5 +2,27 @@ from classes.agenda import Agenda
 from classes.contato import Contato
 from classes.tarefas import Tarefas
 
-print('Menu')
-print('')
+contato = Contato()
+agenda = Agenda()
+tarefas = Tarefas()
+
+while True:
+    print('      Menu')
+    print('1.Cadastrar contato')
+    print('2.Listar contatos')
+    print('3.Excluir contatos')
+    print('4.Criar tarefa')
+    print('5.Listar tarefa')
+    print('6.Exluir tarefa')
+    print('7.Sair')
+    print()
+
+    escolha_menu = input('Como deseja proseguir?>')
+    executando= True
+
+    if escolha_menu == '7':
+        break
+    elif escolha_menu == '1':
+        contato.cadastrar_contato(contato)
+    elif escolha_menu == '2':
+        print(contato.contatos)
