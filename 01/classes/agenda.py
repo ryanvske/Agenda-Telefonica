@@ -3,8 +3,7 @@ class Agenda:
     def __init__(self):
         self.__proprietario = ''
         self.__ano = ''
-        self.__contatos = []
-        self.__tarefas = []
+        self.tarefas = []
 
         
     def get_proprietario(self):

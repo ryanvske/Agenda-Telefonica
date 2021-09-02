@@ -25,4 +25,6 @@ while True:
     elif escolha_menu == '1':
         contato.cadastrar_contato(contato)
     elif escolha_menu == '2':
-        print(contato.contatos)
+        print('contatos ' + str(contato.contatos))
+    elif escolha_menu == '3':
+        contato.excluir_contato()
