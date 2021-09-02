@@ -27,4 +27,4 @@ while True:
     elif escolha_menu == '2':
         print('contatos ' + str(contato.contatos))
     elif escolha_menu == '3':
-        contato.excluir_contato()
+        contato.excluir_contato(contato.contatos)

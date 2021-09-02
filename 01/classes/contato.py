@@ -23,7 +23,9 @@ class Contato:
         numero = input('Numero>')
         novo_contato = (nome,numero)
         self.contatos.append(novo_contato)
+        print()
 
     def excluir_contato(self):
+        print()
         print('Excluindo contato...')
         self.contatos.clear(Contato)
