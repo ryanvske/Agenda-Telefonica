@@ -28,4 +28,4 @@ class Contato:
     def excluir_contato(self):
         print()
         print('Excluindo contato...')
-        self.contatos.clear(Contato)
+        self.contatos.clear()

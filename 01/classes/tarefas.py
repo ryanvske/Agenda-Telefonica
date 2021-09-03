@@ -27,5 +27,5 @@ class Tarefas:
 
     def excluir_tarefa(self, indice):
         print()
-        print('Excluindo contato...')
-        del self.tarefas[int(indice) - 1]
+        print('Excluindo tarefas...')
+        self.tarefas.clear()
