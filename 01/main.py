@@ -29,3 +29,10 @@ while True:
     elif escolha_menu == '3':
         indice = input('Digite o id que você deseja excluir: ')
         contato.excluir_contato(indice)
+    elif escolha_menu == '4':
+        tarefas.criar_tarefa(tarefas)
+    elif escolha_menu == '5':
+        print('tarefas ' + str(tarefas.tarefas))
+    elif escolha_menu == '6':
+        tarefas.excluir_tarefa(tarefas)
+        

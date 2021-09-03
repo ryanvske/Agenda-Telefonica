@@ -3,7 +3,8 @@ class Tarefas:
     def __init__(self):
         self.__descricao = ''
         self.__data = ''
-
+        self.tarefas = []
+    
     def get_descricao(self):
         return self.__descricao
 
@@ -16,3 +17,15 @@ class Tarefas:
     def set_data(self, data):
         self.__data = data
     
+    def criar_tarefa(self,tarefa):
+        print('Criando tarefa...')
+        descricao = input('Descrição da tarefa>')
+        data = input('Data>')
+        nova_tarefa = (descricao,data)
+        self.tarefas.append(nova_tarefa)
+        print()
+
+    def excluir_tarefa(self, indice):
+        print()
+        print('Excluindo contato...')
+        del self.tarefas[int(indice) - 1]
