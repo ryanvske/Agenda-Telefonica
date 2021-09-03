@@ -27,4 +27,5 @@ while True:
     elif escolha_menu == '2':
         print('contatos ' + str(contato.contatos))
     elif escolha_menu == '3':
-        contato.excluir_contato(contato.contatos)
+        indice = input('Digite o id que você deseja excluir: ')
+        contato.excluir_contato(indice)
